@@ -1,25 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import AddTodo from './components/AddTodo';
+import Todos from './components/Todos';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className=' w-[100vw] h-[100vh] bg-purple-400 mt- flex flex-col items-center'>
+      <p className='mt-16 text-4xl font-mono font-bold '>Learn About Redux</p>
+      <AddTodo/>
+      <Todos/>
     </div>
   );
 }
 
 export default App;
+
